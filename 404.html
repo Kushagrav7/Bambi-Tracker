@@ -1,32 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
+<html lang="en">
+<head>
+  <title>Page not Found</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="global.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #cbb091;
+    padding: 25vw;
+  }
+  
+.carousel-inner img {
+    width: 100vw; /* Set width to 100% */
+    margin: auto;
+    min-height:50vh;
+}
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #00ffc8; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #00ffd557; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>LMAO AHAHA</h1>
-      <p>This page dont exist fool. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this? (cuz u dum)</h3>
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 100vw) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="index.html">Bambi</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Track</a></li>
+      <li><a href="log.html">Log</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<body>
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div id="message">
+                <h2>404</h2>
+                <h1>LMAO AHAHA</h1>
+                <p>This page dont exist fool. Please check the URL for mistakes and try again.</p>
+                <h3>Why am I seeing this? (cuz u dum)</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        </div>
     </div>
-  </body>
-</html>
+</body>
