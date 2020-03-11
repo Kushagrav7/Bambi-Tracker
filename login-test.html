@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bambi Tracker</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -48,7 +48,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="log.html">Track</a></li>
+        <li><a href="#">Track</a></li>
         <li><a href="log.html">Log</a></li>
         <li><a href="pictures.html">Pictures</a></li>
       </ul>
@@ -58,55 +58,39 @@
     </div>
   </div>
 </nav>
+</head>
+<body>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+  <div id="login_div" class="main-div">
+    <h3>login </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="IMG_2227.jpg" alt="Image" style="width:35vw;height:90vh">
-        <div class="carousel-caption">
-          <h3></h3>
-        </div>      
-      </div>
-      
-      <div class="item">
-        <img src="IMG_2527.jpg" alt="Image" style="width:60vw;height:90vh">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>      
-      </div>
+    <button onclick="login()">Login to Account</button>
+  </div>
 
-      
-      <div class="item">
-        <img src="IMG_2531.jpg" alt="Image" style="width:75vw;height:90vh">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>      
-      </div>
-    </div>
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome! You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-  
-<footer class="container-fluid text-center">
-  <p>Made by Kushagra Verma</p>
-</footer>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
+      authDomain: "bambi-tracker.firebaseapp.com",
+      databaseURL: "https://bambi-tracker.firebaseio.com",
+      projectId: "bambi-tracker",
+      storageBucket: "bambi-tracker.appspot.com",
+      messagingSenderId: "349077398753"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="login.js"></script>
 
 </body>
+</html>
