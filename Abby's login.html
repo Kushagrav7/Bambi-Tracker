@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+<!-- metadata, data about the HTML doc-->
+    <title>Signin Page</title>
+    <!--style and fonts-->
+       <link rel = "styleSheet" href = "style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <!--helps convert from moblie to laptop nicely-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+</head>
+
+<body>
+
+<div class = "topnav" id = "nav">
+    <a href="index.html">About</a>
+    <a href="signin.html" class="active">Sign In</a>
+    <a href="createanaccount.html">Create an Account</a>
+</div>
+
+<div class="login">
+    <h2>Landen's Sweets</h2>
+    <div id="signin_div" class="main-div"></div>
+    <h1>Sign in</h1>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+
+    <div id="user_div" class="signedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome! You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </form>
+</div>
+</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
+    authDomain: "jiaartman.firebaseapp.com",
+    databaseURL: "https://jiaartman.firebaseio.com",
+    projectId: "jiaartman",
+    storageBucket: "jiaartman.appspot.com",
+    messagingSenderId: "349077398753"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="js/signin.js"></script>
+</html>

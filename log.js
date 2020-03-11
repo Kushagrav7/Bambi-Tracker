@@ -6,7 +6,7 @@ dbref.once('value', snap => {
     snap.forEach(childSnap => {
         longestLength = longestLength < childSnap.numChildren() ? childSnap.numChildren() : longestLength
     })
-    for (let i = 1; i <= longestLength; i++) {
+    for (let i = longestLength; i >= 1; i--) {
         rowString = rowString.concat("<tr>")
         snap.forEach(childSnap => {
             
