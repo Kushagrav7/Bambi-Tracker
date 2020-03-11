@@ -6,7 +6,7 @@ var foodBtn = document.getElementById("foodBtn");
 
 async function addToLog(section) {
     var today = new Date();
-    var time = today.getMonth() + "/" + today.getDay() + "/" + today.getFullYear() + " | " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var time = (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear() + " | " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let currentNumChildren = 0
     await firebase.database().ref(section).once('value', snap => {
         currentNumChildren = snap.numChildren() + 1
@@ -16,20 +16,24 @@ async function addToLog(section) {
 
 function submitWalk() {
     addToLog("Walk")
+    alert("Walk")
 }
 
 function submitPee() {
     addToLog("Pee")
+    alert("Walk")
 }
 
 
 function submitPoop() {
     addToLog("Poop")
+    alert("Walk")
 }
 
 
 function submitFood() {
     addToLog("Food")
+    alert("Walk")
 }
 
 
