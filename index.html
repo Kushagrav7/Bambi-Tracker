@@ -48,9 +48,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="track.html">Track</a></li>
-        <li><a href="log.html">Log</a></li>
-        <li><a href="pictures.html">Pictures</a></li>
+        <li id="track"><a href="track.html">Track</a></li>
+        <li id="log"><a href="log.html">Log</a></li>
+        <li id="pictures"><a href="pictures.html">Pictures</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -69,14 +69,14 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="IMG_2215.jpg" alt="Image" style="width:35vw;height:90vh">
+        <img src="IMG_2215.jpg" alt="Image" style="width:auto;height:90vh">
         <div class="carousel-caption">
           <h3>Bambi</h3>
         </div>      
       </div>
 
       <div class="item">
-        <img src="IMG_2341.jpg" alt="Image" style="width:35vw;height:90vh">
+        <img src="IMG_2341.jpg" alt="Image" style="width:auto;height:90vh">
         <div class="carousel-caption">
           <h3>@bambi__the__dog</h3>
           <p>Follow on instagram</p>
@@ -99,6 +99,8 @@
   <p>Made by Kushagra Verma</p>
 </footer>
 
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.7.0/firebase-app.js"></script>
 
@@ -114,4 +116,18 @@
 <script src="/__/firebase/7.9.2/firebase-firestore.js"></script>
 <script src="/__/firebase/7.9.2/firebase-database.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
+        authDomain: "bambi-tracker.firebaseapp.com",
+        databaseURL: "https://bambi-tracker.firebaseio.com",
+        projectId: "bambi-tracker",
+        storageBucket: "bambi-tracker.appspot.com",
+        messagingSenderId: "349077398753"
+      };
+      firebase.initializeApp(config);
+    </script>
+<script src="index.js"></script>
 </body>

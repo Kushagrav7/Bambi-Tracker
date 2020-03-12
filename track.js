@@ -21,19 +21,22 @@ function submitWalk() {
 
 function submitPee() {
     addToLog("Pee")
-    alert("Walk")
+    alert("Pee")
 }
 
 
 function submitPoop() {
     addToLog("Poop")
-    alert("Walk")
+    alert("Poop")
 }
 
 
 function submitFood() {
     addToLog("Food")
-    alert("Walk")
+    alert("Food")
 }
 
-
+$( document ).ready(function() {
+    // Date Time Picker Initialization
+    $('.date-time').dateTimePicker();
+  });
