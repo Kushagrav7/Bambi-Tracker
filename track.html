@@ -9,33 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="global.css" type="text/css" rel="stylesheet">
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
-
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #cbb091;
-            padding: 25px;
-        }
-
-        .carousel-inner img {
-            width: 100%;
-            /* Set width to 100% */
-            margin: auto;
-            min-height: 200px;
-        }
-
-        /* Hide the carousel text when the screen is less than 600 pixels wide */
-        @media (max-width: 600px) {
-            .carousel-caption {
-                display: none;
-            }
-        }
-    </style>
+    <link href="index.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -69,44 +43,48 @@
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <h1 id="head">Track</h1>
-                    <button type="button" class="btn btn-primary btn-lg btn-block" id="foodBtn" onclick="submitFood()">Food</button>
-                    <button type="button" class="btn btn-warning btn-lg btn-block" id="peeBtn" onclick="submitPee()">Pee</button>
-                    <button type="button" class="btn btn-danger btn-lg btn-block" id="poopBtn" onclick="submitPoop()">Poop</button>
-                    <button type="button" class="btn btn-success btn-lg btn-block" id="walkBtn" onclick="submitWalk()">Walk</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="foodBtn"
+                        onclick="submitFood()">Food</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block" id="peeBtn"
+                        onclick="submitPee()">Pee</button>
+                    <button type="button" class="btn btn-danger btn-lg btn-block" id="poopBtn"
+                        onclick="submitPoop()">Poop</button>
+                    <button type="button" class="btn btn-success btn-lg btn-block" id="walkBtn"
+                        onclick="submitWalk()">Walk</button>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12"></div>
             </div>
-        
 
-        
 
-        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
-                authDomain: "bambi-tracker.firebaseapp.com",
-                databaseURL: "https://bambi-tracker.firebaseio.com",
-                projectId: "bambi-tracker",
-                storageBucket: "bambi-tracker.appspot.com",
-                messagingSenderId: "349077398753"
-            };
-            firebase.initializeApp(config);
-        </script>
 
-        <script src="track.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
-        authDomain: "bambi-tracker.firebaseapp.com",
-        databaseURL: "https://bambi-tracker.firebaseio.com",
-        projectId: "bambi-tracker",
-        storageBucket: "bambi-tracker.appspot.com",
-        messagingSenderId: "349077398753"
-      };
-      firebase.initializeApp(config);
-    </script>
-<script src="index.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
+                    authDomain: "bambi-tracker.firebaseapp.com",
+                    databaseURL: "https://bambi-tracker.firebaseio.com",
+                    projectId: "bambi-tracker",
+                    storageBucket: "bambi-tracker.appspot.com",
+                    messagingSenderId: "349077398753"
+                };
+                firebase.initializeApp(config);
+            </script>
+
+            <script src="track.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
+                    authDomain: "bambi-tracker.firebaseapp.com",
+                    databaseURL: "https://bambi-tracker.firebaseio.com",
+                    projectId: "bambi-tracker",
+                    storageBucket: "bambi-tracker.appspot.com",
+                    messagingSenderId: "349077398753"
+                };
+                firebase.initializeApp(config);
+            </script>
+            <script src="index.js"></script>
     </body>

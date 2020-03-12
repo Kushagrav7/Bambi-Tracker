@@ -36,7 +36,5 @@ function submitFood() {
     alert("Food")
 }
 
-$( document ).ready(function() {
-    // Date Time Picker Initialization
-    $('.date-time').dateTimePicker();
-  });
+
+
