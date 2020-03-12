@@ -7,7 +7,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   
     } else {
         console.log('logged out');
-        document.getElementById("track").style.display = "none !important";
-        document.getElementById("log").style.display = "none !important"; 
+        document.getElementById("track").style.display = "none";
+        document.getElementById("log").style.display = "none"; 
     }
   });

@@ -6,13 +6,13 @@ dbref.once('value', snap => {
     snap.forEach(childSnap => {
         longestLength = longestLength < childSnap.numChildren() ? childSnap.numChildren() : longestLength
     })
-    for (let i = longestLength; i >= 1; i--) {
+    for (let i = 0; i < longestLength; i++) {
         rowString = rowString.concat("<tr>")
         snap.forEach(childSnap => {
-            
-            if (childSnap.hasChild(i.toString())) {
-                rowString = rowString.concat("<td>" + childSnap.child(i.toString()).val() + "</td>")
-                console.log(childSnap.child(i.toString()).val())
+            let j = (childSnap.numChildren() - i)
+            if (childSnap.hasChild(j.toString())) {
+                rowString = rowString.concat("<td>" + childSnap.child(j.toString()).val() + "</td>")
+                console.log(childSnap.child(j.toString()).val())
             } else {
                 rowString = rowString.concat("<td></td>")
             }

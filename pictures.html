@@ -44,12 +44,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Bambi</a>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-icon-dog"></span>Bambi</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="log.html">Track</a></li>
-        <li><a href="log.html">Log</a></li>
+        <li id="track"><a href="track.html">Track</a></li>
+        <li id="log"><a href="log.html">Log</a></li>
         <li><a href="pictures.html">Pictures</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -118,4 +118,18 @@
   <p>Made by Kushagra Verma</p>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBLQnlXBb5AaZG9mySslpdBTC4COxTiOCI",
+        authDomain: "bambi-tracker.firebaseapp.com",
+        databaseURL: "https://bambi-tracker.firebaseio.com",
+        projectId: "bambi-tracker",
+        storageBucket: "bambi-tracker.appspot.com",
+        messagingSenderId: "349077398753"
+      };
+      firebase.initializeApp(config);
+    </script>
+<script src="index.js"></script>
 </body>
