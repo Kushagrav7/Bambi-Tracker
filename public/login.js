@@ -27,8 +27,8 @@ function login(){
 
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
-
-  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) 
+  {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -36,10 +36,16 @@ function login(){
     window.alert("Error : " + errorMessage);
 
     // ...
-  });
-
+  }); 
+  if (document.referrer !== document.location.href) {
+    setTimeout(function() {
+        document.location.reload()
+  }, 400);
 }
+}
+
 
 function logout(){
   firebase.auth().signOut();
+  location.reload();
 }
