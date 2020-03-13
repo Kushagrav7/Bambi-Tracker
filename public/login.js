@@ -40,7 +40,7 @@ function login(){
   if (document.referrer !== document.location.href) {
     setTimeout(function() {
         document.location.reload()
-  }, 400);
+  }, 500);
 }
 }
 
