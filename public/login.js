@@ -39,7 +39,7 @@ function login(){
   }); 
   if (document.referrer !== document.location.href) {
     setTimeout(function() {
-        document.location.reload()
+        window.location.href = 'index.html'
   }, 500);
 }
 }
