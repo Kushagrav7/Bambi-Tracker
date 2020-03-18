@@ -34,14 +34,14 @@ function login(){
     var errorMessage = error.message;
 
     window.alert("Error : " + errorMessage);
-
-    // ...
+    return false; 
   }); 
   if (document.referrer !== document.location.href) {
     setTimeout(function() {
         window.location.href = 'index.html'
   }, 500);
 }
+return true;
 }
 
 
