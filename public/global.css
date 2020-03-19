@@ -1,15 +1,18 @@
 *{color: rgb(0, 0, 0);}
+/* Background formatting */
 .bg{background: url('IMG_2531.jpg')
     no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: auto; height: 100vh;}
+
+    /* login page box */
 .form-container{border:0px solid#fff;padding: 50px 60px; margin-top: 15vh;
     -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
     box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75); 
 }
-
+/* log page table */
 #table_body{
     flex-direction: row;
 }

@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(function(user) { //checks to see if the uer is signed in or not
   if (user) {
     // User is signed in.
 
@@ -22,7 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
   }
 });
-
+// method to log the user in
 function login(){
 
   var userEmail = document.getElementById("email_field").value;
@@ -36,6 +36,8 @@ function login(){
     window.alert("Error : " + errorMessage);
     return false; 
   }); 
+
+  // redirects user back to the home page
   if (document.referrer !== document.location.href) {
     setTimeout(function() {
         window.location.href = 'index.html'
@@ -44,7 +46,7 @@ function login(){
 return true;
 }
 
-
+// logs the user out
 function logout(){
   firebase.auth().signOut();
   location.reload();
